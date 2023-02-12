@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, #root {
+  font-family: Inter;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info--app {
   display: flex;
   flex-direction: column;
+  background-color: #1A1B21;
+  max-width: 320px;
+  height:auto;
+  border-radius: 10px;
+  margin:auto;
+}
+
+.profile{
+  text-align: center;
+  /* justify-content: center; */
+}
+
+.profile > h1 {
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.profile > p {
+  color: #F3BF99;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  font-weight: 300;
+  padding-block: 2px;
+}
+
+.profile > small {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: #F5F5F5;
+  margin-bottom: 15px;
+}
+
+.profile > img {
+  width: 100%;
+  margin-bottom: 15px;
+  /* height: auto; */
+}
+
+.profile--buttons > button {
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 110px;
+  height: 34px;
+  border: 1px solid;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  margin: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.email--tag, .linkedin--tag {  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 7px;
+}
+
+.linkedin--button {
+  background: #5093E2;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  
+}
+
+.button--text {
+  display:flex;
+  width:100%;
+  height:100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.linkedin--tag {
+  color:#FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.interest, .about  {
+  color: #F5F5F5;
+  text-align: justify;
+  padding: 5px 40px;
+}
+
+.info--header{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-block: 7px; 
+  font-style: normal;
+  line-height: 150%;
+/* or 24px */
+
+
+color: #F5F5F5;
+}
+
+.info--text {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #E5E5E5;
+
+
+}
+
+
+
+.footer {
+  display:flex;
+  background-color: #161619;
+  height:64px;
+  justify-content: space-around;
+  border-radius: 0px 0px 10px 10px;
+  padding:20px 40px;
+  margin-top: 30px;
+}
+
+.footer > img {
+  width: 25px;
+  height: 25px;
 }
